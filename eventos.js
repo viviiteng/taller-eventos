@@ -6,8 +6,11 @@ container.addEventListener("click", (event) => {
 });
 
 let btn = document.querySelector("button")
-btn.addEventListener("click", (event) => {
-    event.stopPropagation();
+function saludo() {
     alert("Hola!");
-});
+}
+btn.onclick= (event) => {
+    event.stopPropagation();
+    saludo()
+};
 
